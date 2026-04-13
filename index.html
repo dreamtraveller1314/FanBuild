@@ -1,113 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FanBuild — Turn your fandom into real code</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FanBuild — Turn your fandom into real code</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
+        <nav>
+            <div class="nav-logo">FanBuild </div>
+            <div class="nav-links">
+                <a href="index.html" class = "active">Home</a>
+                <a href="">Beginner Guide</a>
+                <a href="">Gallery</a>
+                <a href="">Submit</a>
+            </div>
+        </nav>
 
-  <body>
+        <section class="hero">
+            <p class="badge">A Hack Club YSWS Program</p>
+            <h1><span class = "pink">Fan</span><span class = "purple">Build</span></h1>
+            <p class="tagline">Turn your fandom into real code.</p>
+            <p class="sub">Build and earn rewards by creating projects inspired by your favourite celebrities!</p>
+            <div class = "hero-btns">
+                <a href="#submit" class="btn-main">Submit Your Project</a>
+                <a href="" class="btn-outline">Beginner Guide</a>
+            </div>
+        </section>
 
-    <nav>
-      <a href="index.html" class = "active">Home</a>
-      <a href="">Beginner Guide</a>
-      <a href="">Gallery</a>
-      <a href="">Submit</a>
-    </nav>
+        <section id="how-it-works">
+            <div class = "sec-center">
+                <h2>How to start a projects</h2>
+            </div>
 
-    <section class="hero">
-      <p class="badge">A Hack Club YSWS Program</p>
-      <h1>FanBuild</h1>
-      <p class="tagline">Turn your fandom into real code.</p>
-      <p class="sub">Build and earn rewards by creating projects inspired by your favourite celebrities!</p>
-      <a href="" class="btn-primary">Submit Your Project</a>
-      <a href="" class="btn-secondary">Beginner Guide</a>
-    </section>
+            <div class="steps">
 
-    <section id="how-it-works">
-      <h2>How FanBuild works</h2>
+                <div class="step">
+                    <span class="step-num">01</span>
+                    <h3>Choose your inspiration</h3>
+                    <p>Pick a celebrity and a project type that excites you — musician, athlete, actor, and more.</p>
+                </div>
+                
+                <div class="step">
+                    <span class="step-num">02</span>
+                    <h3>Build your project</h3>
+                    <p>Use our beginner-friendly guides or bring your own creativity. Track time with <a href="https://hackatime.hackclub.com/" target="_blank" rel="noopener noreferrer">Hackatime</a> or <a href="https://lapse.hackclub.com/" target="_blank" rel="noopener noreferrer">Lapse</a> .</p>
+                </div>
 
-      <div class="steps">
+                <div class="step">
+                    <span class="step-num">03</span>
+                    <h3>Ship it</h3>
+                    <p>Projects must be functional, deployed, and open-source.</p>
+                </div>
+            </div>
+        </section>
 
-        <div class="step">
-          <span class="step-num">1</span>
-          <h3>Choose your inspiration</h3>
-          <p>Pick a celebrity and a project type that excites you — musician, athlete, actor, and more.</p>
-        </div>
+        <section id="submit" class="sec">
+            <div class = "submit">
+                <div class="sticker">FREE<br>stickers!</div>
+                <p>Submit your project to earn a FREE stickers and grants for celebrity rewards</p>
+                <a href="" class="btn-main">Submit Now!</a>
+            </div>
+        </section>
 
-        <div class="step">
-          <span class="step-num">2</span>
-          <h3>Build your project</h3>
-          <p>Use our beginner-friendly guides or bring your own creativity. Track time with Hackatime or Lapse.</p>
-        </div>
+        <section id="prizes" class="sec">
+            <div class = "sec-center">
+                <h2 class="sec-title">What you can <span class="accent">earn</span></h2>
+                <div class="prize-grid">
+                    <div class="prize-card prize1">
+                        <h3 class="prize-title">Free Stickers</h3>
+                        <p class="prize-desc">Free Hack Club stickers<br>shipped to your door</p>
+                    </div>
+                    <div class="prize-card prize2">
+                        <h3 class="prize-title">HCB Grant</h3>
+                        <span class="prize-time">2+ hours</span>
+                        <p class="prize-desc">Stickers + <br><strong>$3–5/hour HCB grant</strong><br> for celebrity-related rewards you actually want!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="step">
-          <span class="step-num">3</span>
-          <h3>Ship it</h3>
-          <p>Projects must be functional, deployed (live URL or demo video), and open-source.</p>
-        </div>
+        <section id="faq" class ="sec">
+            <div class="sec-center">
+                <h2 class="sec-title">FAQ</h2>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    Who can join FanBuild?
+                    <span class="faq-arrow">+</span>
+                </button>
+                <div class="faq-a">
+                    Anyone aged 13–18 who enjoys building or learning to code.
+                </div>
+            </div>
 
-      </div>
-    </section>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    How do I track my time?
+                    <span class="faq-arrow">+</span>
+                </button>
+                <div class="faq-a">
+                    Software projects → Hackatime. <br>Art in software can be tracked using Lapse and cannot exceed 30% of the project hours. <br> Hardware/design → Lapse. 
+                </div>
+            </div>
 
-    <section id="submit" class="submit-section">
-      <p>Submit your project to earn stickers, grants & celebrity rewards</p>
-      <a href="" class="btn-primary">Submit Now!</a>
-    </section>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    I'm a beginner. Can I still join?
+                    <span class="faq-arrow">+</span>
+                </button>
+                <div class="faq-a">
+                    Yes — FanBuild is designed for beginners! We provide guides and examples to help you start.
+                </div>
+            </div>
 
-    <section id="prizes">
-      <h2>What you can earn</h2>
-      <div class="prize-grid">
-        <div class="prize-card">
-          <p>Free Hack Club stickers shipped to your door</p>
-        </div>
-        <div class="prize-card featured">
-          <span class="prize-badge">2+ hours</span>
-          <p>Hack Club stickers + <strong>$3–5/hour HCB grant</strong> for celebrity-related rewards!</p>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <section id="faq">
-      <h2>FAQ</h2>
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          Who can join FanBuild?
-          <span class="faq-arrow">+</span>
-        </button>
-        <div class="faq-a">
-          Anyone aged 13–18 who enjoys building or learning to code.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          How do I track my time?
-          <span class="faq-arrow">+</span>
-        </button>
-        <div class="faq-a">
-          Software projects → Hackatime. <br>Art in software can be tracked using Lapse and cannot exceed 30% of the project hours. <br> Hardware/design → Lapse. 
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">
-          I'm a beginner. Can I still join?
-          <span class="faq-arrow">+</span>
-        </button>
-        <div class="faq-a">
-          Yes — FanBuild is designed for beginners! We provide guides and examples to help you start.
-        </div>
-      </div>
-
-    </section>
-
-    <footer>
-      <p>A <a href="https://hackclub.com">Hack Club</a> YSWS program · Made with ❤️ by @XR</p>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+        <footer>
+            <p>A <a href="https://hackclub.com">Hack Club</a> YSWS program · Made with ❤️ by @XR</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>
