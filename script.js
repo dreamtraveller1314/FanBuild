@@ -4,7 +4,7 @@ function toggleFaq(button) {
   const isOpen = answer.classList.contains('open');
 
   document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
-  document.querySelectorAll('.faq-plus').forEach(p => {
+  document.querySelectorAll('.faq-arrow').forEach(p => {
     p.classList.remove('open');
     p.textContent = '+';
   });

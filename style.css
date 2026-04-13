@@ -383,3 +383,60 @@ footer p {
 footer a {
   color: #ff4d8d;
 }
+
+.grants-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.grant-card {
+  background-color: #ffffff;
+  border: 2px solid #e9d5ff;
+  border-radius: 16px;
+  padding: 20px 16px;
+}
+
+.grant-card h4 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #2d2d2d;
+  margin-bottom: 12px;
+}
+
+.grant-card ul {
+  list-style: none;
+}
+
+.grant-card li {
+  font-size: 17px;
+  color: #777777;
+  padding: 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.grant-card li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ff4d8d;
+  flex-shrink: 0;
+}
+
+.grants-note {
+  text-align: center;
+  font-size: 17px;
+  color: #767676;
+  margin-top: 20px;
+}
+
+.nav-logo img {
+  height: 65px;
+  width: auto; 
+  display: block;
+}
+
