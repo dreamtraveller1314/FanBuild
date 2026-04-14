@@ -513,3 +513,41 @@ footer a {
   color: #ff4d8d;
   margin-bottom: 16px;
 }
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.cnt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cnt-n {
+  font-family: 'Fredoka One', cursive;
+  font-size: 54px;
+  color: #ff4d8d;
+  line-height: 1;
+}
+
+.cnt-l {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #bbbbbb;
+  margin-top: 4px;
+}
+
+.cnt-sep {
+  font-family: 'Fredoka One', cursive;
+  font-size: 48px;
+  color: #e0d4f0;
+  line-height: 1;
+  padding-top: 4px;
+}
